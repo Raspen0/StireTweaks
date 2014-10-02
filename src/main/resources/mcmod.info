@@ -1,0 +1,15 @@
+[
+{
+  "modid": "StireTweaks",
+  "name": "Stirecraft Tweaks",
+  "description": "Tweaks for the Stirecraft Modpack",
+  "version": "1.0",
+  "mcversion": "1.6.4",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["raspen0"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
