@@ -15,43 +15,31 @@ import cpw.mods.fml.common.IPlayerTracker;
 import cpw.mods.fml.common.network.PacketDispatcher;
 import cpw.mods.fml.common.network.Player;
 
-public class StireTweaksPlayerHandler implements IPlayerTracker{
+public class StireTweaksPlayerHandler implements IPlayerTracker {
+	public boolean Stirecraft2;
 
-	  
-	
-	  public ConcurrentHashMap<String, StireTweaksPlayerStats> playerStats = new ConcurrentHashMap<String, StireTweaksPlayerStats>();
-	
-	
 	@Override
-    public void onPlayerLogin (EntityPlayer entityplayer)
-    {
+	public void onPlayerLogin(EntityPlayer entityplayer) {
 
-	  NBTTagCompound tags = entityplayer.getEntityData();
-        if (!tags.hasKey("StireTweaks"))
-        {
-            tags.setCompoundTag("StireTweaks", new NBTTagCompound());
-        }
-	
-        StireTweaksPlayerStats stats = new StireTweaksPlayerStats();
-        
-        stats.Stirecraft2 = tags.getCompoundTag("StireTweaks").getBoolean("Stirecraft2");
+		NBTTagCompound tags = entityplayer.getEntityData();
+		if (!tags.hasKey("StireTweaks")) {
+			tags.setCompoundTag("StireTweaks", new NBTTagCompound());
+		}
 
-        
-        if (!stats.Stirecraft2)
-        {
-            stats.Stirecraft2 = true;
-            tags.getCompoundTag("StireTweaks").setBoolean("Stirecraft2", true);
-            }
-        
-    }
-	
-	
+		Stirecraft2 = tags.getCompoundTag("StireTweaks").getBoolean(
+				"Stirecraft2");
+
+		if (!Stirecraft2) {
+			Stirecraft2 = true;
+			tags.getCompoundTag("StireTweaks").setBoolean("Stirecraft2", true);
+		}
+
+	}
 
 	@Override
 	public void onPlayerLogout(EntityPlayer player) {
 	}
 
-	
 	@Override
 	public void onPlayerChangedDimension(EntityPlayer player) {
 	}
@@ -59,7 +47,5 @@ public class StireTweaksPlayerHandler implements IPlayerTracker{
 	@Override
 	public void onPlayerRespawn(EntityPlayer player) {
 	}
-	
-	
-	
-	}
+
+}
