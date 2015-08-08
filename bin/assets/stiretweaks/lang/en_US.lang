@@ -1,0 +1,76 @@
+tile.redrock.name=Red Rock
+tile.redcobble.name=Red Rock Cobblestone
+tile.redbrick.name=Red Rock Bricks
+itemGroup.StireTweaks=StireTweaks
+item.PurpleGear.name=Manyullyn Gear
+item.PurpleDrill.name=Manyullyn Drill Head
+tile.iridiumOre.name=Iridium Ore
+item.uraniumingot.name=Uranium Ingot
+item.RewardBag.name=Stirecraft Reward Bag
+
+death.attack.radiation=%1$s died from radiation
+potion.radiation=Radiation
+
+//Crushed Ores
+item.CrushedOre.ignatius.name=Crushed Ignatius Ore
+item.CrushedOre.shadowiron.name=Crushed Shadow Iron Ore
+item.CrushedOre.lemurite.name=Crushed Lemurite Ore
+item.CrushedOre.midasium.name=Crushed Midasium Ore
+item.CrushedOre.vyroxeres.name=Crushed Vyroxeres Ore
+item.CrushedOre.ceruclase.name=Crushed Ceruclase Ore
+item.CrushedOre.alduorite.name=Crushed Alduorite Ore
+item.CrushedOre.kalendrite.name=Crushed Kalendrite Ore
+item.CrushedOre.vulcanite.name=Crushed Vulcanite Ore
+item.CrushedOre.sanguinite.name=Crushed Sanguinite Ore
+
+item.CrushedOreColor.eximite.name=Crushed Eximite Ore
+item.CrushedOreColor.meutoite.name=Crushed Meutoite Ore
+
+
+
+item.CrushedOre.nether.nickel.name=Crushed Nether Ferrous Ore
+item.CrushedOre.nether.osmium.name=Crushed Nether Osmium Ore
+item.CrushedOre.nether.coal.name=Crushed Nether Coal Ore
+item.CrushedOre.nether.diamond.name=Crushed Nether Diamond Ore
+item.CrushedOre.nether.gold.name=Crushed Nether Gold Ore
+item.CrushedOre.nether.iron.name=Crushed Nether Iron Ore
+item.CrushedOre.nether.lapis.name=Crushed Nether Lapis Ore
+item.CrushedOre.nether.sulfur.name=Crushed Nether Sulfur Ore
+item.CrushedOre.nether.salt.name=Crushed Nether Salt Ore
+item.CrushedOre.nether.saltpeter.name=Crushed Nether Saltpeter Ore
+item.CrushedOre.nether.magnesium.name=Crushed Nether Magnesium Ore
+item.CrushedOre.nether.redstone.name=Crushed Nether Redstone Ore
+item.CrushedOre.nether.copper.name=Crushed Nether Copper Ore
+item.CrushedOre.nether.tin.name=Crushed Nether Tin Ore
+item.CrushedOre.nether.emerald.name=Crushed Nether Emerald Ore
+item.CrushedOre.nether.silver.name=Crushed Nether Silver Ore
+item.CrushedOre.nether.lead.name=Crushed Nether Lead Ore
+item.CrushedOre.nether.uranium.name=Crushed Nether Uranium Ore
+item.CrushedOre.nether.ruby.name=Crushed Nether Ruby Ore
+item.CrushedOre.nether.peridot.name=Crushed Nether Peridot Ore
+item.CrushedOre.nether.sapphire.name=Crushed Nether Sapphire Ore
+
+
+item.CrushedOreColor.mars.copper.name=Crushed Copper Ore
+item.CrushedOreColor.mars.tin.name=Crushed Tin Ore
+item.CrushedOreColor.mars.iron.name=Crushed Iron Ore
+
+item.CrushedOreColor.asteroid.iron.name=Crushed Iron Ore
+item.CrushedOreColor.asteroid.aluminum.name=Crushed Aluminum Ore
+
+
+
+//Purified Ore
+item.PurifiedOre.ignatius.name=Purified Crushed Ignatius Ore
+item.PurifiedOre.shadowiron.name=Purified Crushed Shadow Iron Ore
+item.PurifiedOre.lemurite.name=Purified Crushed Lemurite Ore
+item.PurifiedOre.midasium.name=Purified Crushed Midasium Ore
+item.PurifiedOre.vyroxeres.name=Purified Crushed Vyroxeres Ore
+item.PurifiedOre.ceruclase.name=Purified Crushed Ceruclase Ore
+item.PurifiedOre.alduorite.name=Purified Crushed Alduorite Ore
+item.PurifiedOre.kalendrite.name=Purified Crushed Kalendrite Ore
+item.PurifiedOre.vulcanite.name=Purified Crushed Vulcanite Ore
+item.PurifiedOre.sanguinite.name=Purified Crushed Sanguinite Ore
+
+item.PurifiedOre.eximite.name=Purified Crushed Eximite Ore
+item.PurifiedOre.meutoite.name=Purified Crushed Meutoite Ore

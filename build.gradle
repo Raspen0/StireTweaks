@@ -5,29 +5,58 @@ buildscript {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
     }
+ }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.0-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+    }
+}
+
+repositories {
+    maven {
+        name = "ChickenBones"
+        url = "http://chickenbones.net/maven"
     }
 }
 
 apply plugin: 'forge'
 
-version = "1.0"
-group= "com.gmail.rickvinke1.StireTweaks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Stirecraft-Tweaks"
+ext.configFile = file "build.properties"
+
+configFile.withReader {
+    def prop = new Properties()
+    prop.load(it)
+    project.ext.config = new ConfigSlurper().parse prop
+}
+
+version = "${config.minecraft_version}-${config.mod_version}"
+group= "nl.raspen0.StireTweaks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "StireTweaks"
+
 
 minecraft {
-	version = "1.6.4-9.11.1.964"
+    version = config.minecraft_version + "-" + config.forge_version
+    runDir = "eclipse"
 }
 
 dependencies {
+    compile "codechicken:NotEnoughItems:${config.minecraft_version}-${config.nei_version}:dev"
+    compile "codechicken:CodeChickenCore:${config.minecraft_version}-${config.ccc_version}:dev"
+
 }
+
 processResources
 {
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
     // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod/info'
+        include 'mcmod.info'
                 
         // replace version and mcversion
         expand 'version':project.version, 'mcversion':project.minecraft.version
