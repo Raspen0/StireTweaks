@@ -20,15 +20,15 @@ public class BlockRegistry {
 	}
 
 	public static void RedRock() {
-
-		ItemStack RedRock = new ItemStack(RedRockBlock);
-		ItemStack RedCobble = new ItemStack(RedCobbleBlock);
-		ItemStack RedBricks = new ItemStack(RedRockBrick);
 		
 		GameRegistry.registerBlock(RedRockBlock, "RedRock");
 		GameRegistry.registerBlock(RedCobbleBlock, "RedCobble");
 		GameRegistry.registerBlock(RedRockBrick, "RedRockBrick");
 
+		ItemStack RedRock = new ItemStack(RedRockBlock);
+		ItemStack RedCobble = new ItemStack(RedCobbleBlock);
+		ItemStack RedBricks = new ItemStack(RedRockBrick);
+		
 		GameRegistry.addSmelting(RedCobble, RedRock, 0.1f);
 
 		GameRegistry.addShapelessRecipe(new ItemStack(RedRockBrick, 4), RedRock, RedRock, RedRock, RedRock);
