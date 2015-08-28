@@ -8,7 +8,7 @@ public class Gears extends Item{
 	public Gears()
 	{
 		super();
-		setTextureName("StireTweaks:PurpleGear");
+		setTextureName("StireTweaks:manyullynGear");
 		setUnlocalizedName("PurpleGear");
 		setCreativeTab(StirecraftTweaks.tabSTweaks);
 	}
