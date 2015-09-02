@@ -22,6 +22,7 @@ import nl.raspen0.StireTweaks.Blocks.RedCobbleBlock;
 import nl.raspen0.StireTweaks.Blocks.RedRockBlock;
 import nl.raspen0.StireTweaks.Blocks.RedRockBrick;
 import nl.raspen0.StireTweaks.Book.BookEvent;
+import nl.raspen0.StireTweaks.WorldConversion.RewardEvent;
 import nl.raspen0.StireTweaks.Items.ItemRegistry;
 import nl.raspen0.StireTweaks.Potion.PotionEvent;
 import nl.raspen0.StireTweaks.Potion.RadiationPotion;
@@ -42,6 +43,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class StirecraftTweaks {
 
 	public static BookEvent BookEvent;
+	public static RewardEvent RewardEvent;
     public static BiomeGenBase biomeStireTweaks;
 
 	public static CreativeTabs tabSTweaks = new CreativeTabs("StireTweaks") {
@@ -68,6 +70,8 @@ public class StirecraftTweaks {
 			BookEvent = new BookEvent();
 			FMLCommonHandler.instance().bus().register(BookEvent);
 		}
+		RewardEvent = new RewardEvent();
+	    FMLCommonHandler.instance().bus().register(RewardEvent);
 
 	}
 
