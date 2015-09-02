@@ -44,6 +44,7 @@ public class StirecraftTweaks {
 
 	public static BookEvent BookEvent;
 	public static RewardEvent RewardEvent;
+	public static HasPlayedEvent HasPlayedEvent;
     public static BiomeGenBase biomeStireTweaks;
 
 	public static CreativeTabs tabSTweaks = new CreativeTabs("StireTweaks") {
@@ -72,6 +73,8 @@ public class StirecraftTweaks {
 		}
 		RewardEvent = new RewardEvent();
 	    FMLCommonHandler.instance().bus().register(RewardEvent);
+		HasPlayedEvent = new HasPlayedEvent();
+	    FMLCommonHandler.instance().bus().register(HasPlayedEvent);
 
 	}
 

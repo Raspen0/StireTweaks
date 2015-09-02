@@ -17,7 +17,6 @@ public class RewardEvent {
 	}
 
 	private boolean giveRewardBag(EntityPlayer player) {
-		NBTTagCompound tags = player.getEntityData();
 		if (player.getEntityData().getCompoundTag("StireTweaks").getBoolean("Stirecraft2")
 				&& !player.getEntityData().getCompoundTag("StireTweaks").getBoolean("hasRewardBag")) {
 			ItemStack stack = new ItemStack(ItemRegistry.RewardBag);
