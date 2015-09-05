@@ -26,6 +26,7 @@ import nl.raspen0.StireTweaks.WorldConversion.RewardEvent;
 import nl.raspen0.StireTweaks.Items.ItemRegistry;
 import nl.raspen0.StireTweaks.Potion.PotionEvent;
 import nl.raspen0.StireTweaks.Potion.RadiationPotion;
+import nl.raspen0.StireTweaks.Testing.TestRegistry;
 import nl.raspen0.StireTweaks.Utils.ConfigHandler;
 import nl.raspen0.StireTweaks.Utils.FileLoader;
 import nl.raspen0.StireTweaks.Utils.Strings;
@@ -82,6 +83,9 @@ public class StirecraftTweaks {
 	public void init(FMLInitializationEvent event) {
 
 		ItemRegistry.TweakRegistry();
+		if(ConfigHandler.testpickaxe){
+			TestRegistry.init();
+		}
 
 		if (ConfigHandler.redrock) {
 			BlockRegistry.RedRock();

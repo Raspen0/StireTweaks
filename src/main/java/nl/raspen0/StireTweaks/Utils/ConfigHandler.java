@@ -25,6 +25,7 @@ public class ConfigHandler {
 	public static boolean IridiumOre;
 	
 	public static boolean debug;
+	public static boolean testpickaxe;
 	public static boolean uraniumpoison;
 	public static boolean RewardBag;
 	public static boolean redrockbiome;
@@ -58,6 +59,8 @@ public class ConfigHandler {
 		ChangeLog = config.get("General", "Changelog", true, "Give Changelog").getBoolean(true);
 		
 		PackVersion = config.get("General", "PackVersion", "3.0.0" , "Pack Version").getString();
+		
+		testpickaxe = config.get("debug", "Test Pickaxes", false, "Enables creative only pickaxes to test the harvestlevels of blocks").getBoolean(true);
 		
 		debug = config.get("debug", "debug", false, "When enabled shows extra messages used for testing").getBoolean(true);
 	
